@@ -11,4 +11,6 @@ It's my personal website developed by using a python tool named **[Streamlit
 P.S. Don't judge too quickly :) I've spent few hours for making it. In the first day when I got know **Streamlit**.
 
 ___
-To run just use ``python main.py``
+To run use:
+
+- ``streamlit run main.py``

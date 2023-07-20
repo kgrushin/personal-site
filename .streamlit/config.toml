@@ -1,0 +1,10 @@
+[theme]
+primaryColor = "#58a9d8"
+backgroundColor = "#f9feff"
+secondaryBackgroundColor = "#85d2e2"
+textColor = "#191e60"
+font = "monospace"
+
+#[server]
+#sslCertFile = '/path/to/certchain.pem'
+#sslKeyFile = '/path/to/private.key'

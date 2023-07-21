@@ -140,7 +140,7 @@ class Content:
                 with_honor=True,
             ),
             Education(
-                Universities.MOSCOW_AVIATION,
+                Universities.FINANCIAL,
                 EducationLevels.MASTER,
                 EducationDirections.CS,
                 "2019/09 - 2021/06",

@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import os
 
 from src.repository import Content
 
@@ -12,6 +13,10 @@ class Application:
         st.set_page_config(
             page_title=self.content.TITLE, page_icon=self.content.MY_AVATAR_SRC
         )
+
+        yandex_metric_script = os.getenv("YANDEX_METRIC_SCRIPT", "")
+        st.components.v1.html(yandex_metric_script, height=0)
+
         hide_streamlit_style = """
                     <style>
                     #MainMenu {visibility: hidden;}

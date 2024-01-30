@@ -30,6 +30,13 @@ class Application:
         col1.image(self.content.MY_AVATAR_SRC)
         col2.header(self.content.TITLE)
         col2.text(self.content.POSITION)
+        col2_1, col2_2 = col2.columns(2)
+        with open(self.content.MY_CV_EN_SRC, "rb") as file:
+            col2_1.download_button('Download CV :uk:', file, file_name=self.content.MY_CV_EN_SRC,
+                                   mime='application/pdf')
+        with open(self.content.MY_CV_RU_SRC, "rb") as file:
+            col2_2.download_button('Download CV :ru:', file, file_name=self.content.MY_CV_RU_SRC,
+                                   mime='application/pdf')
         st.markdown(self.content.PREVIEW)
         st.divider()
 
@@ -55,20 +62,17 @@ class Application:
             col1.text(education.level.value)
             col2.text(education.program.value)
             col3.text(education.since_to)
-            col4.text("With honor? " + str(education.with_honor))
+            if education.with_honor:
+                col4.text("with honor")
 
     def work(self) -> None:
         st.header("Work")
         for work_experience in self.content.WORK_EXPERIENCE:
-            col1, col2, col3, col4 = st.columns(4)
-            st.text(work_experience.employer.company.value)
-            col2.text(work_experience.employer.place.value)
-            col3.text(work_experience.employer.type.value)
-            col4.text("# Empl. = " + str(work_experience.employer.cnt_employees))
-            col2.text(work_experience.position.value)
-            col4.text(work_experience.since_to)
-            col1, _, _ = st.columns(3)
-            col1.divider()
+            st.subheader(f":blue[{work_experience.employer.company.value}]")
+            st.caption(work_experience.employer.place.value)
+            st.caption(work_experience.since_to)
+            st.text(work_experience.position.value)
+            st.divider()
 
     def papers(self) -> None:
         st.header("Papers")

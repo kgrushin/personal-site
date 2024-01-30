@@ -59,38 +59,48 @@ class Content:
             Conference(
                 "WorkShop",
                 Companies.RENAISSANCE,
+                "Is Optimal Binning a good idea?",
                 "10",
                 "2019",
-                "Is Optimal Binning a good idea?",
                 Cities.MOSCOW,
                 30,
             ),
             Conference(
                 "WorkShop",
                 Companies.OTKRITIE,
+                "JupyterLab. How to use all possibilities?",
                 "06",
                 "2022",
-                "JupyterLab. How to use all possibilities?",
                 Cities.MOSCOW,
                 30,
             ),
             Conference(
                 "ComDS",
                 Companies.VTB,
+                "What's better: boosting vs linear models?",
                 "06",
                 "2023",
-                "What's better: boosting vs linear models?",
                 Cities.MOSCOW,
                 50,
             ),
             Conference(
                 "ComDS",
                 Companies.VTB,
+                "Talks about classic ML Pipeline",
                 "07",
                 "2023",
-                "Talks about classic ML Pipeline",
                 Cities.MOSCOW,
                 50,
+            ),
+            Conference(
+                "Risk Managers Forum (рисковики.рф)",
+                Companies.ID_REGLAMENT,
+                "Financing government contracts:" +
+                "from expert rules through logistic regression to boosting - models start and win",
+                "11",
+                "2023",
+                Cities.MOSCOW,
+                100,
             ),
         ]
     )
@@ -166,6 +176,21 @@ class Content:
                 "https://habr.com/ru/companies/otkritie/articles/738618/",
                 2023,
             ),
+            Paper(
+                "Optimal binning for Logistic Regression: library's possibilities",
+                "https://futurebanking.ru/reglamentbank/article/7824",
+                2023,
+            ),
+            Paper(
+                "Optimal binning for Logistic Regression: an example from real world",
+                "https://futurebanking.ru/reglamentbank/article/7937",
+                2023,
+            ),
+            Paper(
+                "Using Genetic Algorithms for feature selection in a credit scoring task",
+                "https://futurebanking.ru/reglamentbank/article/7959",
+                2024,
+            ),
         ]
     )
 
@@ -193,8 +218,11 @@ class Content:
                 len(self.CONFERENCES),
                 "Conferences I participated in as a speaker",
             ),
-            Metric("Worked years", 4, 4, info=None),
-            Metric("Models developed", 32, 32, info=None),
+            Metric("Worked years", 5, 5, info=None),
+            Metric("Global business tasks", 10, 10,
+                   info="Global business tasks were solved with significant impact on profit "
+                        "(Credit scoring 4x, Preapproval 1x, Guarantees 2x, "
+                        "Precollection 1x, Collection 1x, Allocation 1x)"),
             Metric(
                 "Mentored",
                 12,

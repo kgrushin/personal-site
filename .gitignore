@@ -1,5 +1,3 @@
 .venv/
 __pycache__/
 .idea/
-.env
-.yandex_metric_code

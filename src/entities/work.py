@@ -21,6 +21,7 @@ class Companies(str, Enum):
     BIN_BANK = "BinBank"
     VTB = "VTB"
     RUSSIAN_STANDARD = "Russian Standard"
+    ID_REGLAMENT = "Reglament Publishing House"
 
 
 @dataclass

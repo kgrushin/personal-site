@@ -22,13 +22,12 @@ from src.entities.work import (
 @dataclass
 class Content:
     TITLE: str = "Konstantin Grushin"
-    POSITION: str = "Data Scientist / Developer (Full-stack)"
+    POSITION: str = "Data Scientist"
     PREVIEW: str = """
     Hi {user}! I'm glad to see you on my personal website!
     Here you're able to:
     - [:scroll: Read small story about me](#story)
     - [:school: Get know with my education](#education)
-    - [:trophy: Have a look at my work experience](#work)
     - [:page_with_curl: Meet my papers (mostly in Russian :flag-ru:)](#papers)
     - [:briefcase: Conferences I've participated as a speaker](#conferences)
     - [:mailbox: Contact with me](#contact-with-me)
@@ -101,6 +100,15 @@ class Content:
                 "2023",
                 Cities.MOSCOW,
                 100,
+            ),
+            Conference(
+                "ComDS",
+                Companies.VTB,
+                "Using Genetic Algorithms for feature selection",
+                "07",
+                "2024",
+                Cities.MOSCOW,
+                50,
             ),
         ]
     )

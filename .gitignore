@@ -1,3 +1,6 @@
 .venv/
 __pycache__/
 .idea/
+.DS_Store
+CV_grushin_ke_ru.pdf
+CV_grushin_ke_en.pdf

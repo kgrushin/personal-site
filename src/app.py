@@ -98,7 +98,7 @@ class Application:
         self.metrics()
         self.story()
         self.education()
-        self.work()
+        # self.work()
         self.papers()
         self.conferences()
         self.contacts()

@@ -1,16 +1,27 @@
-# My personal website: source files
+# 🌐 Personal Website
+
+> A personal corner of the web, built entirely with Python & Streamlit.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+
+## About
+
+My personal website built using **[Streamlit](https://github.com/streamlit/streamlit)** —
+a framework I discovered and shipped with in a single day. Structured with some approximation of
+**Clean Architecture** principles in mind.
+
+## Highlights
+
+- 🐍 **Pure Python stack** — no JavaScript required
+- 📖 **Open source** — explore, fork, or borrow ideas freely
+
+## Getting Started
+
+```bash
+streamlit run main.py
+```
 
 ---
 
-It's my personal website developed by using a python tool named **[Streamlit
-](https://github.com/streamlit/streamlit)**.
---- 
-
-- I tried to implement some of **Clean Architecture** patterns as much as it's possible here.
-
-P.S. Don't judge too quickly :) I've spent few hours for making it. In the first day when I got know **Streamlit**.
-
-___
-To run use:
-
-- ``streamlit run main.py``
+> Sometimes the best way to learn something is to just ship it.

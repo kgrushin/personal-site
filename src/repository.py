@@ -226,15 +226,15 @@ class Content:
                 len(self.CONFERENCES),
                 "Conferences I participated in as a speaker",
             ),
-            Metric("Worked years", 5, 5, info=None),
-            Metric("Global business tasks", 10, 10,
+            Metric("Worked years", 7, 7, info=None),
+            Metric("Global business tasks", 11, 11,
                    info="Global business tasks were solved with significant impact on profit "
                         "(Credit scoring 4x, Preapproval 1x, Guarantees 2x, "
-                        "Precollection 1x, Collection 1x, Allocation 1x)"),
+                        "Precollection 1x, Collection 1x, Allocation 1x, MMM-like 1x)"),
             Metric(
                 "Mentored",
-                12,
-                12,
+                16,
+                16,
                 "How many people I've mentored and helped to grow (my teammates)",
             ),
         ]
